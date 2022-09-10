@@ -28,13 +28,32 @@
 # Пример:
 # Для n = 6 -> 14.072
 
-n = int(input('введите число '))
-a = []
-for i in range (1, n):
-    a.append((1+1/i)**i)
-print(a)
-sum = 0
-for i in a:
-    sum = sum + i
-print(round(sum, 3))
+# n = int(input('введите число '))
+# a = []
+# for i in range (1, n):
+#     a.append((1+1/i)**i)
+# print(a)
+# sum = 0
+# for i in a:
+#     sum = sum + i
+# print(round(sum, 3))
+
+# Задание 4 Задайте список из N элементов, заполненных числами из промежутка [-N, N].
+# Найдите произведение элементов на позициях a и b.
+# Значения N, a и b вводит пользователь с клавиатуры.
+
+print('Введите числа N, a, b')
+N = int(input())
+a = int(input())
+b = int(input())
+list = []
+for i in range (-N, N+1):
+    list.append(i)
+print(list)
+if N > a and N > b:
+   mult = list[a]*list[b]
+   print(mult)
+else:
+    print ('позиции a и b выходят за рамки списка длинной N')
+
 
