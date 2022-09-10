@@ -17,9 +17,24 @@
 
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-num = int(input('Введите число '))
-list = [1]
-for i in range(1, num):
-    list.append(list[1] * list[i])
-print(list)
+# num = int(input('Введите число '))
+# list = [1]
+# for i in range(1, num):
+#     list.append(list[1] * list[i])
+# print(list)
+
+# Задание 3 Задайте список из n чисел последовательности (1+1/n)^n и выведите на экран их сумму,
+# округлённую до трёх знаков после точки.
+# Пример:
+# Для n = 6 -> 14.072
+
+n = int(input('введите число '))
+a = []
+for i in range (1, n):
+    a.append((1+1/i)**i)
+print(a)
+sum = 0
+for i in a:
+    sum = sum + i
+print(round(sum, 3))
 
