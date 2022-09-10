@@ -42,18 +42,28 @@
 # Найдите произведение элементов на позициях a и b.
 # Значения N, a и b вводит пользователь с клавиатуры.
 
-print('Введите числа N, a, b')
-N = int(input())
-a = int(input())
-b = int(input())
-list = []
-for i in range (-N, N+1):
-    list.append(i)
+# print('Введите числа N, a, b')
+# N = int(input())
+# a = int(input())
+# b = int(input())
+# list = []
+# for i in range (-N, N+1):
+#     list.append(i)
+# print(list)
+# if N > a and N > b:
+#    mult = list[a]*list[b]
+#    print(mult)
+# else:
+#     print ('позиции a и b выходят за рамки списка длинной N')
+
+# Задание 5 Реализуйте алгоритм перемешивания списка.
+
+from tempfile import tempdir
+
+import random
+list = ['реализуйте алгоритм перемешивания списка', 5, -154, 'кабачки', True]
+mix_list = random.shuffle(list)
 print(list)
-if N > a and N > b:
-   mult = list[a]*list[b]
-   print(mult)
-else:
-    print ('позиции a и b выходят за рамки списка длинной N')
+print(mix_list)
 
 
