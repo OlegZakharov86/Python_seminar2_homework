@@ -58,12 +58,25 @@
 
 # Задание 5 Реализуйте алгоритм перемешивания списка.
 
-from tempfile import tempdir
 
-import random
-list = ['реализуйте алгоритм перемешивания списка', 5, -154, 'кабачки', True]
-mix_list = random.shuffle(list)
-print(list)
-print(mix_list)
+# import random
+# list = ['реализуйте алгоритм перемешивания списка', 5, -154, 'кабачки', True]
+# mix_list = random.shuffle(list)
+# print(list)
+# print(mix_list)
+
+# Задание 6
+#  Напишите программу, в которой пользователь будет задавать две строки,
+# а программа - определять количество вхождений одной строки в другой.
+# Пример
+# -Для "abababb" и "aba" -> 2
+
+str1 = input('Введите первую строку: ')
+str2 = input('Введите вторую строку: ')
+count = 0
+for i in str1:
+    str1.find(str2[:])
+    count = count +1
+print (count)
 
 
